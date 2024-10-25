@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="660.0" maxWidth="480.0" minHeight="660.0" minWidth="480.0" prefHeight="660.0" prefWidth="480.0" styleClass="main-background-colour" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.form_controllers.LoginFormController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="480.0" layoutY="291.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/clothify_shop.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="294.0" layoutY="-3.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);" width="480.0" />
+      <ImageView fitHeight="216.0" fitWidth="282.0" layoutX="105.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/clothify_logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="328.0" layoutX="102.0" layoutY="318.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);" width="282.0" />
+      <Label layoutX="125.0" layoutY="357.0" text="Email Address:-">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmail" focusColor="#7b5eea" layoutX="125.0" layoutY="386.0" prefHeight="40.0" prefWidth="241.0" promptText="Example@Gmail.com" styleClass="input-login-text" stylesheets="@../css/style.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pfPassword" focusColor="#7b5eea" layoutX="125.0" layoutY="488.0" prefHeight="40.0" prefWidth="241.0" promptText="********" styleClass="input-login-text" stylesheets="@../css/style.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <Label layoutX="125.0" layoutY="460.0" text="Password :-">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnLogin" layoutX="126.0" layoutY="581.0" onAction="#btnLoginOnAction" prefHeight="40.0" prefWidth="241.0" style="-fx-background-color: #353b48;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="49.0" layoutY="166.0" text="Clothify" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="ArnoPro-SmbdItalicSubhead" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="230.0" text=" Management System" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Alfredo Heavy Hollow" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
